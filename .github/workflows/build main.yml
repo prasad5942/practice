@@ -25,9 +25,9 @@ jobs:
       - run: npm install
       - run: npm test
       deploy:
-    needs: test
-
-    permissions:
+    
+      needs: test
+      permissions:
       contents: write
       pages: write     
       id-token: write  
